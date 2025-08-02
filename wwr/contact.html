@@ -58,25 +58,32 @@
       <fieldset>
         <legend>Your Information</legend>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="input-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-        <p>Purpose of your message:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <div class="radio-group">
+          <p>Purpose of your message:</p>
+          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        </div>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        </div>
 
         <button type="submit" aria-label="Send your message to White Water Rafting">Send Message</button>
       </fieldset>
     </form>
+
   </section>
 </main>
 
