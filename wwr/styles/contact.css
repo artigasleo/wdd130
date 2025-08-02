@@ -203,3 +203,14 @@ footer .socialmedia img {
   background-color: #1e3c57;
 }
 
+.input-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-row .form-group {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+}
